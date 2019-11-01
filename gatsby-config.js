@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/Gatsby-Strapi-Demo",
   siteMetadata: {
     title: `Gatsby Starter with Strapi CMS`,
     description: `Headless CMS built on Strapi with Gatsby front-end.`,
