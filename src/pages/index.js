@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from 'gatsby-image'
 import Layout from "../components/layout"
+import ReactMarkdown from 'react-markdown'
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -17,7 +18,7 @@ const IndexPage = ({ data }) => (
           {document.node.image && (
             <Img fixed={document.node.image.childImageSharp.fixed}/>
           )}
-          <p>{document.node.Content}</p>
+          <ReactMarkdown source={document.node.Content} />
         </li>
       ))}
     </ul>
